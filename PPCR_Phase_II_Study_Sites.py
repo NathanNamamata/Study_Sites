@@ -13,7 +13,7 @@ folium.GeoJson(gdf).add_to(m)
 
 # Add tiles as background
 folium.TileLayer('OpenStreetMap').add_to(m)
-*
+
 # Add attribute information to the map
 html = gdf.to_html()
 popup = folium.Popup(html)
