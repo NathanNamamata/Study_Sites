@@ -9,7 +9,7 @@ gdf = gpd.read_file(shapefile_path)
 m = folium.Map(location=[-15, 30], zoom_start=6)
 
 # Add shapefile data to the map
-folium.GeoJson(gdf).add_to(m)
+folium.GeoJson(gdf, tooltip=folium.GeoJsonTooltip(fields=['DistName', 'WardNm2020'], labels=True, sticky=True)).add_to(m)
 
 # Add tiles as background
 folium.TileLayer('OpenStreetMap').add_to(m)
