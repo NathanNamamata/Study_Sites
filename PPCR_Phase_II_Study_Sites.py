@@ -1,3 +1,9 @@
+"""""""
+Script : To create a web map for the study sites
+Name : Nathan Namatama
+Date : 2024
+
+""""""""
 import folium
 import os
 import geopandas as gpd
